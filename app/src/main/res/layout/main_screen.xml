@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ibtn_Hansp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tlacidlo"
+                android:text="@string/b_hanspaulka"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/ibtn_VET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tlacidlo"
+                android:text="@string/b_veterani"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/ibtn_SupVet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tlacidlo"
+                android:text="@string/b_superveterani"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/ibtn_UltraVet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tlacidlo"
+                android:text="@string/b_ultraveterani"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_lookupteam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:completionThreshold="3"
+                android:hint="@string/hint_hledanytym"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/btn_vyhledjtym"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/search"
+                />
+
+            <ImageView
+                android:id="@+id/btn_settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/options"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vysledkovac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zobrazujuvysledky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

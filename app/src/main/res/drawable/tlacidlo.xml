@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- disable state. -->
+    <item android:state_enabled="false" android:drawable="@drawable/tlacidlo_release">
+    </item>
+
+    <!--released state. -->
+    <item android:state_pressed="false" android:drawable="@drawable/tlacidlo_release">
+    </item>
+
+    <!--pressed state. -->
+    <item android:state_pressed="true" android:drawable="@drawable/tlacidlo_pressed">
+    </item>
+
+</selector>
